@@ -11,13 +11,13 @@
 */
 int main(void)
 {
-int n, l, der, pre;
+int n, l, der;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 /* your code goes there */
 /* Cela retournera le nombre total de chiffres - 1 */
 l = log10(n);
-pre = n / pow(10, l);
+/* pre = n / pow(10, l); */
 der = n % 10;
 if (der > 5)
 printf("Last digit of %d and is greater than 5\n", n);
