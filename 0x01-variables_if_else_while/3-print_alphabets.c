@@ -10,7 +10,6 @@
 */
 int main(void)
 {
-char c;
 for (char c = 'a';  c <= 'z'; c++)
 putchar(c);
 for (char c = 'A'; c <= 'Z'; c++)
