@@ -4,9 +4,9 @@
 /* more headers goes there */
 
 /**
-*  main - betty style doc for function main goes there
+*  main - checked n if is less than 6 and not 0 or greater than 5 or is 0
 *
-* Retourn : checked last digit of n if is less than 6 and not 0 or greater than 5 or is 0
+* Return: int
 */
 int main(void)
 {
