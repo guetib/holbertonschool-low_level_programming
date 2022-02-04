@@ -4,7 +4,7 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/*
+/**
 * checked last digit of n if is less than 6 and not 0 or greater than 5 or is 0
 */
 int main(void)
