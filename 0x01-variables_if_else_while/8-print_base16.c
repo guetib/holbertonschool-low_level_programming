@@ -12,11 +12,11 @@
 int main(void)
 {
 int n = 48;
-while (n >= 48 && n <= 70)
+while (n >= 48 && n <= 102)
 {
 putchar(n);
 if (n == 57)
-n = 64;
+n = 96;
 n++;
 }
 putchar('\n');
