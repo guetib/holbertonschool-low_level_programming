@@ -11,10 +11,7 @@ int main(void)
 {
 int n = 48;
 int m = 49;
-int v = 8;
-size_t j = 0;
-size_t i = 0;
-int a = 8;
+int j = 0, i = 0, a = 8;
 while (i  <= a && a != -1)
 {
 i++;
@@ -27,10 +24,10 @@ putchar(' ');
 m++;
 j++;
 }
-a--;
+
 n++;
-m = m - v;
-v--;
+m = m - a;
+a--;
 i = 0;
 j = 0;
 }
