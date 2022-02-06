@@ -11,11 +11,10 @@ int main(void)
 {
 int n = 48;
 int m = 49;
-int v = 8;
 int j = 0, i = 0, a = 8;
-while (i  <= a && a != -1)
+while (i <= a && a != -1)
 {
-i++;
+//i++;
 while (j <= a)
 {
 putchar(n);
@@ -25,10 +24,9 @@ putchar(' ');
 m++;
 j++;
 }
-a--;
 n++;
 m = m - a;
-v--;
+a--;
 i = 0;
 j = 0;
 }
