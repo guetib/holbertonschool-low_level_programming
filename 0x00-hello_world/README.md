@@ -2,10 +2,13 @@
 0x00. C - Hello, World
  By Julien Barbier
  Weight: 1
- Ongoing project - started 02-03-2022, must end by 02-04-2022 (in about 14 hours) - you're done with 0% of tasks.
- Checker was released at 02-03-2022 12:00 AM
+ Project over - took place from 02-03-2022 to 02-04-2022 - you're done with 200% of tasks.
  Manual QA review must be done (request it when you are done with the project)
  QA review fully automated.
+In a nutshell…
+Manual QA review: pending
+Auto QA review: 41.0/41 mandatory & 12.0/12 optional
+Altogether: waiting on some reviews
 Concepts
 For this project, students are expected to look at this concept:
 
@@ -17,7 +20,7 @@ Read or watch:
 
 Everything you need to know to start with C.pdf (You do not have to learn everything in there yet, but make sure you read it entirely first)
 Dennis Ritchie
-âCâ Programming Language: Brian Kernighan
+“C” Programming Language: Brian Kernighan
 Why C Programming Is Awesome
 Learning to program in C part 1
 Learning to program in C part 2
@@ -98,102 +101,15 @@ Move the betty file into /bin/ directory or somewhere else in your $PATH with su
 You can now type betty <filename> to run the Betty linter!
 
 Manual QA Review
-It is your responsibility to request a review for your blog from a peer before the projectâs deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
+It is your responsibility to request a review for your blog from a peer before the project’s deadline. If no peers have been reviewed, you should request a review from a TA or staff member.
 
 Quiz questions
-Hide
-
-Question #0
-In which category belongs the C programming language?
-
-
-Interpreted language
-
-
-Compiled language
-
-Question #1
-What is the common extension for a C source file?
-
-
-.txt
-
-
-.c
-
-
-.cpp
-
-
-.py
-
-Question #2
-What is the common extension for a C header file?
-
-
-.header
-
-
-.hpp
-
-
-.h
-
-
-.ch
-
-Question #3
-Which command can be used to compile a C source file?
-
-
-c-compiler
-
-
-gcc
-
-
-bash
-
-Question #4
-Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
-
-
-/* Comment */
-
-// Comment
-
-/*
-Comment
-*/
-
-/*
- * Comment
- */
-
-# Comment
-
-/* Comment /* nested */ */
-Question #5
-What are the different steps to form an executable file from C source code
-
-
-Interpretation, compilation and assembly
-
-
-Preprocessing, compilation, assembly, and linking
-
-
-Interpretation, assembly and compilation
-
-
-Compilation and linking
-
-
-Preprocessing and compilation
+Show
 
 Tasks
 0. Preprocessor
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a script that runs a C file through the preprocessor and save the result into another file.
 
 The C file name will be saved in the variable $CFILE
@@ -229,9 +145,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 0-preprocessor
-   
+    
 1. Compiler
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a script that compiles a C file but does not link.
 
 The C file name will be saved in the variable $CFILE
@@ -262,9 +179,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 1-compiler
-   
+    
 2. Assembler
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a script that generates the assembly code of a C code and save it in an output file.
 
 The C file name will be saved in the variable $CFILE
@@ -314,9 +232,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 2-assembler
-   
+    
 3. Name
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a script that compiles a C file and creates an executable named cisfun.
 
 The C file name will be saved in the variable $CFILE
@@ -343,9 +262,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 3-name
-   
+    
 4. Hello, puts
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a C program that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
 
 Use the function puts
@@ -361,9 +281,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 4-puts.c
-   
+    
 5. Hello, printf
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a C program that prints exactly with proper grammar, but the outcome is a piece of art,, followed by a new line.
 
 Use the function printf
@@ -381,9 +302,10 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 5-printf.c
-   
+    
 6. Size is not grandeur, and territory does not make a nation
 mandatory
+Score: 100.00% (Checks completed: 100.00%)
 Write a C program that prints the size of various types on the computer it is compiled and run on.
 
 You should produce the exact same output as in the example
@@ -412,7 +334,7 @@ Repo:
 GitHub repository: holbertonschool-low_level_programming
 Directory: 0x00-hello_world
 File: 6-size.c
-   
+    
 7. What happens when you type gcc main.c
 mandatory
 Write a blog post that explains all the steps of compilation. Use command lines and examples to illustrate.
@@ -426,5 +348,83 @@ When done, please add all urls below (blog post, LinkedIn post, etc.)
 
 Add URLs here:
 
- 
-Copyright Â© 2022 Holberton Inc, All rights reserved.
+ https://medium.com/@ah.guettib/how-to-compile-the-c-programe-with-gcc-2f71fffd3e11
+  
+8. Intel
+#advanced
+Score: 100.00% (Checks completed: 100.00%)
+Write a script that generates the assembly code (Intel syntax) of a C code and save it in an output file.
+
+The C file name will be saved in the variable $CFILE.
+The output file should be named the same as the C file, but with the extension .s instead of .c.
+Example: if the C file is main.c, the output file should be main.s
+julien@ubuntu:~/c/0x00$ export CFILE=main.c
+julien@ubuntu:~/c/0x00$ cat main.c
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+    return (0);
+}
+julien@ubuntu:~/c/0x00$ ./100-intel 
+julien@ubuntu:~/c/0x00$ cat main.s
+    .file   "main.c"
+    .intel_syntax noprefix
+    .text
+    .globl  main
+    .type   main, @function
+main:
+.LFB0:
+    .cfi_startproc
+    push    rbp
+    .cfi_def_cfa_offset 16
+    .cfi_offset 6, -16
+    mov rbp, rsp
+    .cfi_def_cfa_register 6
+    mov eax, 0
+    pop rbp
+    .cfi_def_cfa 7, 8
+    ret
+    .cfi_endproc
+.LFE0:
+    .size   main, .-main
+    .ident  "GCC: (Ubuntu 5.4.0-6ubuntu1~16.04.2) 5.4.0 20160609"
+    .section    .note.GNU-stack,"",@progbits
+julien@ubuntu:~/c/0x00$ 
+Repo:
+
+GitHub repository: holbertonschool-low_level_programming
+Directory: 0x00-hello_world
+File: 100-intel
+    
+9. UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity
+#advanced
+Score: 100.00% (Checks completed: 100.00%)
+Write a C program that prints exactly and that piece of art is useful" - Dora Korpar, 2015-10-19, followed by a new line, to the standard error.
+
+You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts
+Your program should return 1
+Your program should compile without any warnings when using the -Wall gcc option
+julien@ubuntu:~/c/0x00$ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 -o quote 101-quote.c
+julien@ubuntu:~/c/0x00$ ./quote
+and that piece of art is useful" - Dora Korpar, 2015-10-19
+julien@ubuntu:~/c/0x00$ echo $?
+1
+julien@ubuntu:~/c/0x00$ ./quote 2> q
+julien@ubuntu:~/c/0x00$ cat q
+and that piece of art is useful" - Dora Korpar, 2015-10-19
+julien@ubuntu:~/c/0x00$ grep printf < 101-quote.c
+julien@ubuntu:~/c/0x00$ grep put < 101-quote.c
+julien@ubuntu:~/c/0x00$ 
+Repo:
+
+GitHub repository: holbertonschool-low_level_programming
+Directory: 0x00-hello_world
+File: 101-quote.c
+    
+Copyright © 2022 Holberton Inc, All rights reserved.
