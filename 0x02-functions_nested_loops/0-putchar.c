@@ -7,11 +7,12 @@
 int main(void)
 {
 	char c[] = "_putchar";
-	long unsigned int i = 0;
+	unsigned long int i = 0;
 	while (i < sizeof (c))
 	{
 		_putchar (c[i]);
 		i++;
 	}
+	_putchar ('n');
 	return (0);
 }
