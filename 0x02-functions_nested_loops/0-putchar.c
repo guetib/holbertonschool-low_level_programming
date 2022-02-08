@@ -10,7 +10,7 @@ int main(void)
 	char c[] = "_putchar";
 	unsigned long int i = 0;
 	/*, z = sizeof (c) & INT_MAX;*/
-	while (i < sizeof (c))
+	while (i <= sizeof (c))
 	{
 		_putchar (c[i]);
 		i++;
