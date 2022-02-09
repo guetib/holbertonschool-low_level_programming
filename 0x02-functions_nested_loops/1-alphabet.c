@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_alphabe - check the code
+ * print_alphabet - prints the english alphabet from a-z.
  *
- * Return: Always on success.
+ * Return: Nothing.
  */
 void print_alphabet(void)
 {
