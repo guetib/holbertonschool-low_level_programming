@@ -13,11 +13,12 @@ void times_table(void)
 	for (; i <= 9; i++)
 	{
 		int j = 0;
-		
-		while ( j <=9 )
+
+		while (j <= 9)
 		{
-			int v = i*j;
-			if ( v > 9 )
+			int v = i * j;
+
+			if (v > 9)
 			{
 			_putchar (v / 10 + '0');
 			_putchar (v % 10 + '0');
@@ -25,10 +26,10 @@ void times_table(void)
 			else if (j != 0)
 			{
 				_putchar (' ');
-				_putchar (i*j + '0');
+				_putchar (i * j + '0');
 			}
 			else
-				_putchar (i*j + '0');
+				_putchar (i * j + '0');
 			if (j != 9)
 			{
 				/*printf ("\n table = %d \n", table[i]);*/
