@@ -22,11 +22,13 @@ void times_table(void)
 			_putchar (v / 10 + '0');
 			_putchar (v % 10 + '0');
 			}
-			else
+			else if (j != 0)
 			{
 				_putchar (' ');
 				_putchar (i*j + '0');
 			}
+			else
+				_putchar (i*j + '0');
 			if (j != 9)
 			{
 				/*printf ("\n table = %d \n", table[i]);*/
