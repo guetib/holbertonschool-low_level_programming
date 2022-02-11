@@ -1,5 +1,5 @@
 /**
- *int mul - function that multiplies two integers.
+ *mul - function that multiplies two integers.
  *@a:integer
  *@b:integer
  *Return: @a and @b
