@@ -1,0 +1,17 @@
+#include "main.h"
+
+/**
+ *print_rev - function that prints a string, in reverse, followed by a new line.
+ *@str: pointer Dereferencing at string.
+ *Return : @s
+ */
+
+void print_rev(char *s)
+{
+	while ( 0 < = strlen(str))
+	{
+		_putchar(*str--);
+		strlen(str--);
+	}
+	_putchar('\n');
+}
