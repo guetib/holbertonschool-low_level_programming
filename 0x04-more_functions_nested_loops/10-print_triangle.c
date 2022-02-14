@@ -12,7 +12,7 @@ void print_triangle(int size)
 
 	for (; i < size; i++)
 	{
-		int j = size-1, k = 0;
+		int j = size - 1, k = 0;
 
 		for (; j > i; j--)
 		_putchar(' ');
