@@ -13,7 +13,7 @@ void puts_half(char *str)
 	int length_of_the_string = strlen(str);
 	int n = length_of_the_string / 2;
 
-	while (n <=  length_of_the_string /* *str != '\0' */)
+	while (n <  length_of_the_string && *str != '\0')
 	{
 		_putchar(str[n]);
 		/* str++; */
