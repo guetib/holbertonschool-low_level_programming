@@ -10,19 +10,23 @@
 
 void puts2(char *str)
 {
+	/* char c[] = *str; */
+	int i = 0;
 
-	while (/*i <= strlen(*str)*/*str/* != '\0'*/)
+	while (/*i <= strlen(*str)*/*str || *str == '\0'/* != '\0'*/)
 	{
 		_putchar(*str);
 		/* str+=2; */
 		str++;
 		if (/*!*str  ||*/*str == '\0')
 		{
+			i++;
 			_putchar('\n');
 			break;
 		}
 		else
 			str++;
 	}
+	if (i != 1)
 	_putchar('\n');
 }
