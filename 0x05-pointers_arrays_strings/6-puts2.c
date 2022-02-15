@@ -13,14 +13,16 @@ void puts2(char *str)
 
 	while (/*i <= strlen(*str)*/*str/* != '\0'*/)
 	{
-		_putchar(*str++);
-	        if (!*str)
-		{
-		_putchar('\n');
-		break;
-		}
+		_putchar(*str);
+		/* str+=2; */
 		str++;
-		/* i++; */
+		if (/*!*str  ||*/*str == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		else
+			str++;
 	}
 	_putchar('\n');
 }
