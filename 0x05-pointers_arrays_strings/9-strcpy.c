@@ -15,7 +15,7 @@ char *_strcpy(char *dest, char *src)
 {
 	size_t i, n = strlen(src);
 
-	if(n == 1)
+	if (n == 1)
 	{
 		dest[0] = '\0';
 		return (dest);
