@@ -11,12 +11,12 @@
 
 char *cap_string(char *s)
 {
-	int i = 0, j = 0;
+	int i = 0/* , j = 0 */;
 
 	for (; s[i] != '\0'; i++)
 	{
 		if (
-		    j == 0 ||
+		    /* j == 0 || */
 		    s[i] == '\n'
 		    || s[i] == ' '
 		    || s[i] == '\t'
@@ -32,8 +32,8 @@ char *cap_string(char *s)
 		    || s[i] == '"'
 			)
 		{
-			j++;
-			if (j != 0)
+			/* j++; */
+			/* if (j != 0) */
 			i++;
 			if (s[i] >= 97 && s[i] <= 122)
 				s[i] = s[i] - 32;
