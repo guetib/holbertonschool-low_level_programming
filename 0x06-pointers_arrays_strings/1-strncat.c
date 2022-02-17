@@ -6,6 +6,7 @@
  **_strncat - function that concatenates two strings.
  *@dest: pointer caracter
  *@src: pointer caracter
+ *@n: integer
  *Return: @dest of pointer type
  */
 
