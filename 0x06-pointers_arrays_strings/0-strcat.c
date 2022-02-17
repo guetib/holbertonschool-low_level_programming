@@ -14,7 +14,7 @@ char *_strcat(char *dest, char *src)
   int len = strlen(dest), i, n = strlen(src);
   for (i = 0 ; i <= n && *src != '\0'; i++)
     {
-      printf("%c\n", *dest);
+      /* printf("%c\n", *dest); */
       dest[len + i] = src[i];
       /* src++; */
       /* dest++; */
