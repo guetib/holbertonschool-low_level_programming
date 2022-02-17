@@ -6,7 +6,6 @@
  *_strcmp - function that compares two strings.
  *@s1: pointer caracter
  *@s2: pointer caracter
- *@n: integer
  *Return: integer of pointer type
  */
 
