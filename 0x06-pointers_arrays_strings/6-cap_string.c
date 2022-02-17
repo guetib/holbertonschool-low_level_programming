@@ -32,7 +32,8 @@ char *cap_string(char *s)
 		    || s[i] == '"'
 			)
 		{
-			if (j = 1)
+			j++;
+			if (j != 0)
 			i++;
 			if (s[i] >= 97 && s[i] <= 122)
 				s[i] = s[i] - 32;
