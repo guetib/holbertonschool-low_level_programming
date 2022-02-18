@@ -1,6 +1,5 @@
-
 #include "main.h"
-/* #include <string.h> */
+#include <string.h>
 #include <stdio.h>
 
 /**
@@ -11,37 +10,22 @@
 
 char *cap_string(char *s)
 {
-	int i = 0/* , j = 0 */;
+	int a = 0, i;
+	char sc[] = {32, '\t', '\n', 44, ';', 46, '!', '?', '"', '(', ')', '{', '}'};
 
-	for (; s[i] != '\0'; i++)
+	while (s[a])
 	{
-		if (
-		    /* j == 0 || */
-		    s[i] == '\n'
-		    || s[i] == ' '
-		    || s[i] == '\t'
-		    || s[i] == '.'
-		    || s[i] == ';'
-		    || s[i] == ','
-		    || s[i] == '!'
-		    || s[i] == '?'
-		    || s[i] == '('
-		    || s[i] == ')'
-		    || s[i] == '{'
-		    || s[i] == '}'
-		    || s[i] == '"'
-			)
-		{
-			/* j++; */
-			/* if (j != 0) */
-			i++;
-			if (s[i] >= 97 && s[i] <= 122)
-				s[i] = s[i] - 32;
-			else if (s[i] == '\0')
-				i--;
-		}
-		/* printf("%c", s[i]); */
-	}
+		i = 0;
 
+		while (i < 13)
+		{
+			if ((a == 0 || s[a - 1] == sc[i]) && (s[a] >= 97 && s[a] <= 122))
+				s[a] -= 32;
+
+			i++;
+		}
+
+		a++;
+	}
 	return (s);
 }
