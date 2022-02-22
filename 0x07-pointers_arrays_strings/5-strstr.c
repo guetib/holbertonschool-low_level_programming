@@ -18,7 +18,7 @@ char *_strstr(char *haystack, char *needle)
 	{
 		int j = 0;
 
-		for (; j < (int)strlen(needle) - 1; j++)
+		for (; j < (int)strlen(needle) - 2; j++)
 		{
 			/* printf("str = %d", i); */
 			if (needle[j] == haystack[i])
